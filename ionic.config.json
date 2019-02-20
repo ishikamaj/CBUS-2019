@@ -1,5 +1,7 @@
 {
   "name": "CBUS-2019",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
