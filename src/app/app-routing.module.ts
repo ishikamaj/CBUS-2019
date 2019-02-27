@@ -7,7 +7,8 @@ const routes: Routes = [
   { path: 'heating-tips', loadChildren: './heating-tips/heating-tips.module#HeatingTipsPageModule' },
   { path: 'lighting-tips', loadChildren: './lighting-tips/lighting-tips.module#LightingTipsPageModule' },
   { path: 'air-tips', loadChildren: './air-tips/air-tips.module#AirTipsPageModule' },
-  { path: 'tech-tips', loadChildren: './tech-tips/tech-tips.module#TechTipsPageModule' }
+  { path: 'tech-tips', loadChildren: './tech-tips/tech-tips.module#TechTipsPageModule' },
+  { path: 'air-tips', loadChildren: './air-tips/air-tips.module#AirTipsPageModule' }
 ];
 @NgModule({
   imports: [
