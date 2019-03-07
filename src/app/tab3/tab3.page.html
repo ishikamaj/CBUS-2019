@@ -4,7 +4,7 @@
 
     <ion-searchbar></ion-searchbar>
 
-<button ion-button float="right"  fill="clear" size="large" id="tv">
+<button routerLink="/tvs" routerLinkActive="active" ion-button float="right"  fill="clear" size="large" id="tv">
   <div>
     <div>
       <ion-icon name="tv"></ion-icon>
@@ -13,7 +13,7 @@
   </div>
 </button>
 
-<button ion-button float="right"  fill="clear" size="large" id="computer">
+<button (click) ="computers()" ion-button float="right"  fill="clear" size="large" id="computer">
     <div>
       <div>
         <ion-icon name="laptop"></ion-icon>
@@ -22,7 +22,7 @@
     </div>
   </button>
 
-  <button ion-button float="right"  fill="clear" size="large" id="appliance">
+  <button (click) ="appliances()" ion-button float="right"  fill="clear" size="large" id="appliance">
       <div>
         <div>
           <ion-icon name="outlet"></ion-icon>
@@ -32,7 +32,7 @@
     </button>
 
 
-    <button ion-button float="right"  fill="clear" size="large" id="light">
+    <button (click) ="lighting()" ion-button float="right"  fill="clear" size="large" id="light">
         <div>
           <div>
             <ion-icon name="flashlight"></ion-icon>
@@ -41,7 +41,7 @@
         </div>
       </button>
 
-      <button ion-button float="right"  fill="clear" size="large" id="nav">
+      <button (click) ="navigation()" ion-button float="right"  fill="clear" size="large" id="nav">
           <div>
             <div>
               <ion-icon name="map"></ion-icon>
@@ -50,7 +50,7 @@
           </div>
         </button>
 
-        <button ion-button float="right"  fill="clear" size="large" id="game">
+        <button (click) ="gaming()" ion-button float="right"  fill="clear" size="large" id="game">
             <div>
               <div>
                 <ion-icon name="logo-game-controller-b"></ion-icon>
