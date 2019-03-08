@@ -10,4 +10,19 @@ export class Tab2Page {
 
   constructor(private router: Router) {}
   
+  water () {
+    this.router.navigate(['water-tips'])
+  }
+
+  heating () {
+    this.router.navigate(['heating-tips'])
+  }
+
+  lighting () {
+    this.router.navigate(['lighting-tips'])
+  }
+
+  tech () {
+    this.router.navigate(['tech-tips'])
+  }
 }

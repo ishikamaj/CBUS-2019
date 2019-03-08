@@ -7,7 +7,6 @@ const routes: Routes = [
   { path: 'lighting-tips', loadChildren: './lighting-tips/lighting-tips.module#LightingTipsPageModule' },
   { path: 'air-tips', loadChildren: './air-tips/air-tips.module#AirTipsPageModule' },
   { path: 'tech-tips', loadChildren: './tech-tips/tech-tips.module#TechTipsPageModule' },
-  { path: 'air-tips', loadChildren: './air-tips/air-tips.module#AirTipsPageModule' },
   { path: 'water-tips', loadChildren: './water-tips/water-tips.module#WaterTipsPageModule'},
   { path: 'computers', loadChildren: './computers/computers.module#ComputersPageModule' },
   { path: 'appliances', loadChildren: './appliances/appliances.module#AppliancesPageModule' },
