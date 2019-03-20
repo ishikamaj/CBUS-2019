@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab3',
@@ -8,29 +8,28 @@ import { Router } from '@angular/router';
 })
 export class Tab3Page {
 
-  constructor(private router: Router) {}
+  constructor(private navCtrl: NavController) {}
 
   tvs() {
-    this.router.navigate(['tvs'])
-  }
+    this.navCtrl.navigateForward('tvs');  }
 
   computers() {
-    this.router.navigate(['computers'])
+    this.navCtrl.navigateForward('computers')
   }
 
   appliances() {
-    this.router.navigate(['appliances'])
+    this.navCtrl.navigateForward('appliances')
   }
 
   lighting() {
-    this.router.navigate(['lighting'])
+    this.navCtrl.navigateForward('lighting')
   }
 
   navigation() {
-    this.router.navigate(['navigation'])
+    this.navCtrl.navigateForward('navigation')
   }
 
   gaming() {
-    this.router.navigate(['gaming'])
+    this.navCtrl.navigateForward('gaming')
   }
 }

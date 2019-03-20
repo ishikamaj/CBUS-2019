@@ -1,9 +1,19 @@
+
+
 <ion-header>
   <ion-toolbar>
     <ion-title>tvs</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
 
+<ion-content padding>
+    <ng-container *ngIf="!appliances || appliances.length == 0">
+        <div *ngFor="let n of [0,1,2]" padding>
+          <ion-skeleton-text></ion-skeleton-text>
+            <p>
+              <ion-skeleton-text  class="fake-skeleton"></ion-skeleton-text>
+            </p>
+        </div> 
+      </ng-container>
 </ion-content>

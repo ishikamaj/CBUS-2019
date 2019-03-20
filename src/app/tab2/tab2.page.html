@@ -1,17 +1,54 @@
-
-
 <ion-content>
 
-<p id="stat"> Over 200 billion gallons of water are being wasted every year due to unnecessarily long showers.
-</p>
-<ion-button (click) = "water()" shape="full" fill="outline">Conserve Water</ion-button>
+<ion-card class="welcome-card">
+<ion-card-header>
+    <img src="http://eccutah.com/wp-content/uploads/2018/08/energy-efficiency.jpg">
+    <ion-card-title>How to Conserve Energy at Home</ion-card-title>
+</ion-card-header>
+<ion-card-content>
+  <p>
+    Americans spend $130 billion a year on wasted energy. 
+    By conserving energy, you are not only supporting the wellness of our environment but also saving money!
+  </p>
+</ion-card-content>
+</ion-card>
+      
+      <ion-card>
+        <ion-item>
+          <ion-icon name="water" slot="start"></ion-icon>
+          <ion-label><ion-button (click) = "water()" shape="round" fill="outline">Conserve Water</ion-button></ion-label>
+        </ion-item>      
+        <ion-card-content>
+            Over 200 billion gallons of water are being wasted every year due to unnecessarily long showers.
+        </ion-card-content>
+      </ion-card>
 
-<p id="stat">Water heaters consume nearly 17% of a home’s energy use, more energy than all other household appliances combined.</p>
-<ion-button (click) = "heating()" shape="full" fill="outline">Conserve Heat</ion-button>
+      <ion-card>
+            <ion-item>
+              <ion-icon name="thermometer" slot="start"></ion-icon>
+              <ion-label><ion-button (click) = "heating()" shape="round" fill="outline">Conserve Heat</ion-button></ion-label>
+            </ion-item>      
+            <ion-card-content>
+                Water heaters consume nearly 17% of a home’s energy use, more energy than all other household appliances combined.
+            </ion-card-content>
+          </ion-card>
 
-<p id="stat">The average household consumes 10,982 kWh of electricity and spends around $2,200 annually on utility bills.</p>
-<ion-button (click) = "lighting()" shape="full" fill="outline">Conserve Electricity</ion-button>
+          <ion-card>
+                <ion-item>
+                  <ion-icon name="flash" slot="start"></ion-icon>
+                  <ion-label><ion-button (click) = "lighting()" shape="round" fill="outline">Conserve Electricity</ion-button></ion-label>
+                </ion-item>      
+                <ion-card-content>
+                    The average household consumes 10,982 kWh of electricity and spends around $2,200 annually on utility bills.
+                </ion-card-content>
+              </ion-card>
 
-<p id="stat">In 2013, the combined waste of internet-connected devices in the US was greater than the entire electricity usage of Canada.</p>
-<ion-button (click) = "tech()" shape="full" fill="outline">Conserve Energy through Tech</ion-button>
-</ion-content>
+              <ion-card>
+                    <ion-item>
+                      <ion-icon name="power" slot="start"></ion-icon>
+                      <ion-label><ion-button (click) = "tech()" shape="round" fill="outline">Conserve Tech Energy</ion-button></ion-label>
+                    </ion-item>      
+                    <ion-card-content>
+                            In 2013, the combined waste of internet-connected devices in the US was greater than the entire electricity usage of Canada.
+                    </ion-card-content>
+                </ion-card>

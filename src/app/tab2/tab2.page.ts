@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router'
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab2',
@@ -7,22 +7,22 @@ import { Router } from '@angular/router'
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-
-  constructor(private router: Router) {}
+  
+  constructor(private navCtrl: NavController) {}
   
   water () {
-    this.router.navigate(['water-tips'])
+    this.navCtrl.navigateForward('water-tips')
   }
 
   heating () {
-    this.router.navigate(['heating-tips'])
+    this.navCtrl.navigateForward('heating-tips')
   }
 
   lighting () {
-    this.router.navigate(['lighting-tips'])
+    this.navCtrl.navigateForward('lighting-tips')
   }
 
   tech () {
-    this.router.navigate(['tech-tips'])
+    this.navCtrl.navigateForward('tech-tips')
   }
 }

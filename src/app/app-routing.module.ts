@@ -13,7 +13,10 @@ const routes: Routes = [
   { path: 'lighting', loadChildren: './lighting/lighting.module#LightingPageModule' },
   { path: 'navigation', loadChildren: './navigation/navigation.module#NavigationPageModule' },
   { path: 'gaming', loadChildren: './gaming/gaming.module#GamingPageModule' },
-  { path: 'tvs', loadChildren: './tvs/tvs.module#TvsPageModule' }
+  { path: 'tvs', loadChildren: './tvs/tvs.module#TvsPageModule' },
+  { path: 'details/', loadChildren: './details/details.module#DetailsPageModule' },
+  { path: 'details/:id', loadChildren: './details/details.module#DetailsPageModule' }
+
 
 ];
 @NgModule({
