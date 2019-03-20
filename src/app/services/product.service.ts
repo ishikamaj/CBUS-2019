@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestoreCollection } from 'angularfire2/firestore';
+import { AngularFirestoreCollection, AngularFirestore, CollectionReference } from 'angularfire2/firestore';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import * as firebase from 'firebase';
 import { query } from '@angular/core/src/render3';
 
-export interface Product {
+export interface Appliance {
   name: string;
   location: string;
   price: number;
@@ -19,13 +19,21 @@ export interface Product {
 })
 
 export class ProductService {
-  [x: string]: any;
 
-  productsCollection: AngularFirestoreCollection<Product>;
-  //products: Observable<Product[]>;
-  constructor() {
+  
 
-      var config = {
+ //applianceRef: AngularFirestoreCollection<Appliance>;
+ //appRef: AngularFirestoreCollection<Appliance>;
+ 
+ //appliance$: Observable<Appliance[]>;
+
+//applianceCollection: FireSto
+
+ // constructor(private afs: AngularFirestore) {
+
+ constructor(){
+
+    /*  var config = {
         apiKey: "AIzaSyBdTmUMlG1nMVJvtXynDlypPE73o-pZ3UA",
         authDomain: "cbus-2019.firebaseapp.com",
         databaseURL: "https://cbus-2019.firebaseio.com",
@@ -37,20 +45,27 @@ export class ProductService {
       var app = firebase.initializeApp(config);
       var db = firebase.firestore(app);
 
-      var applianceCollection = db.collection('Appliances');
+       var applianceCollection = db.collection('Appliances');
 
-
-      applianceCollection.get().then(function(querySnapshot) {
+             
+             applianceCollection.get().then(function(querySnapshot) {
+        const myAppliances = [];
         querySnapshot.forEach( (doc) => {
-          console.log(doc.data())
-        })
-      })
+          
+          
+          myAppliances.push(doc.data());
 
-      applianceCollection.get().then(function(querySnapshot) {
-        querySnapshot.forEach( (doc) => {
-        console.log( doc.data() )
-       })
+       //this.appliance$ = doc.data();
+
+       // console.log( doc.data() )
+       }
+       
+       )
+       console.log(myAppliances);
       }) 
+
+     */
+
    }
 
 
