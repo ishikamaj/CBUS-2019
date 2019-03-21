@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from './../services/product.service'
 import * as firebase from 'firebase';
 
 @Component({
@@ -8,7 +7,7 @@ import * as firebase from 'firebase';
   styleUrls: ['./appliances.page.scss']
 })
 export class AppliancesPage {
-  constructor(private productService: ProductService) { 
+  constructor() { 
    
     var config = {
       apiKey: "AIzaSyBdTmUMlG1nMVJvtXynDlypPE73o-pZ3UA",
