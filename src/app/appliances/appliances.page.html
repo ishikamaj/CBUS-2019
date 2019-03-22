@@ -6,7 +6,11 @@
 
 <ion-content padding>
   
-  <!--ion-card>
+    <ion-list>
+        <div *ngFor="let appliance of myAppliances">
+      
+
+  <ion-card>
     <ion-item>
       <img src= {{appliance.img}} >
     </ion-item>
@@ -18,113 +22,11 @@
       <p><b>Location: </b> {{ appliance.location }}</p>
       <ion-button shape="round" fill="outline" href={{appliance.url}}></ion-button>
     </ion-card-content>
-  </ion-card> -->
+  </ion-card> 
+</div>
+</ion-list>
 
-
-    <ion-card>
-        <ion-item>
-          <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3452/3452002_sd.jpg;maxHeight=640;maxWidth=550" height="40px" width="20px" slot="start">
-        </ion-item>      
-        <ion-card-content>
-          <p><b>Name: </b> Samsung - 4.2 Cu. Ft. 8-Cycle High-Efficiency Front-Loading Washer - White</p>
-          <p><b>Power Usage: </b>260 watts</p>
-          <p><b>Rating: </b> 4.5</p>
-          <p><b>Price: </b>$720.00</p>
-          <p><b>Location: </b>Best Buy</p>
-          <ion-button shape="round" fill="outline" href="https://www.bestbuy.com/site/samsung-4-2-cu-ft-8-cycle-high-efficiency-front-loading-washer-white/3452002.p?skuId=3452002">Find it Here</ion-button>
-        </ion-card-content>
-      </ion-card>
-
-      <ion-card>
-          <ion-item>
-            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3871/3871036_rd.jpg;maxHeight=640;maxWidth=550" height="40px" width="20px" slot="start">
-          </ion-item>      
-          <ion-card-content>
-            <p><b>Name: </b> Crock-Pot® - Smart-Pot 4-Quart Slow Cooker - Stainless-Steel/Black </p>
-            <p><b>Power Usage: </b>220 watts</p>
-            <p><b>Rating: </b> 4.5</p>
-            <p><b>Price: </b>$35.00</p>
-            <p><b>Location: </b>Best Buy</p>
-            <ion-button shape="round" fill="outline" href="https://www.bestbuy.com/site/crock-pot-smart-pot-4-quart-slow-cooker-stainless-steel-black/3871036.p?skuId=3871036">Find it Here</ion-button>
-          </ion-card-content>
-        </ion-card>
-
-        <ion-card>
-            <ion-item>
-              <img src="https://images.homedepot-static.com/productImages/653a8a52-a5b2-4ac5-ae62-63914ddbf9b3/svn/fingerprint-resistant-black-stainless-samsung-french-door-refrigerators-rf263beaesg-64_1000.jpg" height="40px" width="20px" slot="start">
-            </ion-item>      
-            <ion-card-content>
-              <p><b>Name: </b> Samsung - 24.6 Cu. Ft. French Door Refrigerator - Fingerprint Resistant Black Stainless Steel </p>
-              <p><b>Power Usage: </b>1745 watts</p>
-              <p><b>Rating: </b> 4.4</p>
-              <p><b>Price: </b>$1800.00</p>
-              <p><b>Location: </b>Best Buy</p>
-              <ion-button shape="round" fill="outline" href="https://www.bestbuy.com/site/samsung-24-6-cu-ft-french-door-refrigerator-fingerprint-resistant-black-stainless-steel/4203800.p?skuId=4203800">Find it Here</ion-button>
-            </ion-card-content>
-          </ion-card>
-
-          <ion-card>
-              <ion-item>
-                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4598/4598501_rd.jpg;maxHeight=640;maxWidth=550" height="40px" width="20px" slot="start">
-              </ion-item>      
-              <ion-card-content>
-                <p><b>Name: </b> KitchenAid - KV25G0XER Professional 500 Series Stand Mixer - Empire Red</p>
-                <p><b>Power Usage: </b>450 watts</p>
-                <p><b>Rating: </b> 4.8</p>
-                <p><b>Price: </b>$500.00</p>
-                <p><b>Location: </b>Best Buy</p>
-                <ion-button shape="round" fill="outline" href="https://www.bestbuy.com/site/kitchenaid-kv25g0xer-professional-500-series-stand-mixer-empire-red/4598501.p?skuId=4598501">Find it Here</ion-button>
-              </ion-card-content>
-            </ion-card>
-
-            <ion-card>
-                <ion-item>
-                  <img src="https://images.homedepot-static.com/productImages/925e8111-7680-4626-a836-5181dc73c9d6/svn/stainless-steel-frigidaire-single-oven-electric-ranges-ffef3054ts-64_1000.jpg" height="40px" width="20px" slot="start">
-                </ion-item>      
-                <ion-card-content>
-                  <p><b>Name: </b> Frigidaire - Self-Cleaning Freestanding Electric Range - Stainless steel</p>
-                  <p><b>Power Usage: </b>3000 watts</p>
-                  <p><b>Rating: </b> 4.6</p>
-                  <p><b>Price: </b>$600.00</p>
-                  <p><b>Location: </b>Best Buy</p>
-                  <ion-button shape="round" fill="outline" href="https://www.bestbuy.com/site/frigidaire-self-cleaning-freestanding-electric-range-stainless-steel/5857605.p?skuId=5857605">Find it Here</ion-button>
-                </ion-card-content>
-              </ion-card>
-
-              <ion-card>
-                  <ion-item>
-                    <img src="https://i5.walmartimages.com/asr/4e545b89-81c1-4704-a87d-8a413079790a_1.bf2fa71f178692b2d401525944671a7d.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF" height="40px" width="20px" slot="start">
-                  </ion-item>      
-                  <ion-card-content>
-                    <p><b>Name: </b>Proctor Silex - 2-Slice Toaster - White</p>
-                    <p><b>Power Usage: </b>750 watts</p>
-                    <p><b>Rating: </b> 3.8</p>
-                    <p><b>Price: </b>$23.00</p>
-                    <p><b>Location: </b>Best Buy</p>
-                    <ion-button shape="round" fill="outline" href="https://www.bestbuy.com/site/proctor-silex-2-slice-toaster-white/5895611.p?skuId=5895611">Find it Here</ion-button>
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card>
-                    <ion-item>
-                      <img src="https://images-na.ssl-images-amazon.com/images/I/711-2lH3hvL._SX466_.jpg" height="40px" width="20px" slot="start">
-                    </ion-item>      
-                    <ion-card-content>
-                      <p><b>Name: </b>Bella - Belgian Flip Waffle Maker - Black/silver</p>
-                      <p><b>Power Usage: </b>1000 watts</p>
-                      <p><b>Rating: </b> 4.5</p>
-                      <p><b>Price: </b>$20.00</p>
-                      <p><b>Location: </b>Best Buy</p>
-                      <ion-button shape="round" fill="outline" href="https://www.bestbuy.com/site/bella-belgian-flip-waffle-maker-black-silver/5978200.p?skuId=5978200">Find it Here</ion-button>
-                    </ion-card-content>
-                  </ion-card> 
-
-    <!--<ion-list>
-      <div *ngFor="let appliance of myAppliances | async">
-      <p>counter</p>
-      <p>{{ appliance.name}} </p>
-      
-    </div>
-  </ion-list> -->
+    
+    
 
 </ion-content>

@@ -5,7 +5,6 @@ import { map } from 'rxjs/operators';
 import * as firebase from 'firebase';
 import { query } from '@angular/core/src/render3';
 import { ApplianceTipsPage } from '../appliance-tips/appliance-tips.page';
-import { UV_UDP_REUSEADDR } from 'constants';
 import { addAllToArray } from '@angular/core/src/render3/util';
 
 export interface Appliance {
@@ -38,23 +37,11 @@ export class ProductService {
       var db = firebase.firestore(app);
   
       var applianceCollection = db.collection('Appliances');
-    
-      //var result = [];
-
-      //let myVar = [];
-      
       applianceCollection.get().then(function(querySnapshot) {
         const myAppliances = [];
         querySnapshot.forEach( (doc) => {
-          myAppliances.push(doc.data());
-         // this.myArr = result;
-      //   this.myArr = myVar[doc.id];
-       //   console.log("YYY" + myVar[doc.id]);
-          
-          //console.log("ZZZ" + this.myArr);
+    
           console.log(myAppliances);
-
-          //this.aaa
         })
       
       }) 

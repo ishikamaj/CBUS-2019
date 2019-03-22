@@ -20,11 +20,10 @@ export interface Appliance {
 }
 */
 export class AppliancesPage {
-
-  //appliancelist: Appliance[];
-  
   constructor(productService: ProductService){
-  
+
+    
+   //appliancelist: Appliance[];
    
   /*  var config = {
         apiKey: "AIzaSyBdTmUMlG1nMVJvtXynDlypPE73o-pZ3UA",
