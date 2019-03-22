@@ -15,7 +15,8 @@ const routes: Routes = [
   { path: 'gaming', loadChildren: './gaming/gaming.module#GamingPageModule' },
   { path: 'tvs', loadChildren: './tvs/tvs.module#TvsPageModule' },
   { path: 'details/', loadChildren: './details/details.module#DetailsPageModule' },
-  { path: 'details/:id', loadChildren: './details/details.module#DetailsPageModule' }
+  { path: 'details/:id', loadChildren: './details/details.module#DetailsPageModule' },  { path: 'appliance-tips', loadChildren: './appliance-tips/appliance-tips.module#ApplianceTipsPageModule' }
+
 
 
 ];

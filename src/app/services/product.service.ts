@@ -4,6 +4,9 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import * as firebase from 'firebase';
 import { query } from '@angular/core/src/render3';
+import { ApplianceTipsPage } from '../appliance-tips/appliance-tips.page';
+import { UV_UDP_REUSEADDR } from 'constants';
+import { addAllToArray } from '@angular/core/src/render3/util';
 
 export interface Appliance {
   name: string;
@@ -19,21 +22,10 @@ export interface Appliance {
 })
 
 export class ProductService {
-
-  
-
- //applianceRef: AngularFirestoreCollection<Appliance>;
- //appRef: AngularFirestoreCollection<Appliance>;
  
- //appliance$: Observable<Appliance[]>;
-
-//applianceCollection: FireSto
-
- // constructor(private afs: AngularFirestore) {
-
  constructor(){
-
-    /*  var config = {
+  
+    var config = {
         apiKey: "AIzaSyBdTmUMlG1nMVJvtXynDlypPE73o-pZ3UA",
         authDomain: "cbus-2019.firebaseapp.com",
         databaseURL: "https://cbus-2019.firebaseio.com",
@@ -41,33 +33,47 @@ export class ProductService {
         storageBucket: "cbus-2019.appspot.com",
         messagingSenderId: "831426845778"
       }
-
+  
       var app = firebase.initializeApp(config);
       var db = firebase.firestore(app);
+  
+      var applianceCollection = db.collection('Appliances');
+    
+      //var result = [];
 
-       var applianceCollection = db.collection('Appliances');
-
-             
-             applianceCollection.get().then(function(querySnapshot) {
+      //let myVar = [];
+      
+      applianceCollection.get().then(function(querySnapshot) {
         const myAppliances = [];
         querySnapshot.forEach( (doc) => {
-          
-          
           myAppliances.push(doc.data());
+         // this.myArr = result;
+      //   this.myArr = myVar[doc.id];
+       //   console.log("YYY" + myVar[doc.id]);
+          
+          //console.log("ZZZ" + this.myArr);
+          console.log(myAppliances);
 
-       //this.appliance$ = doc.data();
-
-       // console.log( doc.data() )
-       }
-       
-       )
-       console.log(myAppliances);
+          //this.aaa
+        })
+      
       }) 
+      
+     
+    //  this.myArr = myVar[doc.id];
 
-     */
+   //   console.log("PP" + this.myArr);
+      
+     /*
+      for (let i in this.myArr){
+        console.log("QQQ" + i);
+      }
+      */
+   //   this.aaa[1].name = "Hello 1";
+  }
+  
+  ngOnInit() {
 
-   }
-
-
- 
+   
+  }
 }
